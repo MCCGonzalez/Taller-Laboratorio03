@@ -1,27 +1,25 @@
 import java.util.*;
+import java.util.ArrayList;
 
 public class Empreza {
 
-	private Collection<Viaje> listaViajes;
+	private ArrayList<String> listaViajes;
 	private String rut;
 	private String direccion;
 	private List<String> redesSociales;
-	private Collection<Conductor> listaConductores;
-	private Collection<Bus> listaBuses;
+	private ArrayList<Conductor> listaConductores;
+	private ArrayList<Bus> listaBuses;
 
 	public Empreza() {
-		// TODO - implement Empreza.Empreza
-		throw new UnsupportedOperationException();
+
 	}
 
-	public void AddConductor() {
-		// TODO - implement Empreza.AddConductor
-		throw new UnsupportedOperationException();
+	public void AddConductor(Conductor conductor) {
+		listaConductores.add(conductor);
 	}
 
-	public void AddBus() {
-		// TODO - implement Empreza.AddBus
-		throw new UnsupportedOperationException();
+	public void AddBus(Bus bus) {
+		listaBuses.add(bus);
 	}
 
 	public void RemoveBus() {
@@ -29,9 +27,8 @@ public class Empreza {
 		throw new UnsupportedOperationException();
 	}
 
-	public void GetViajes() {
-		// TODO - implement Empreza.GetViajes
-		throw new UnsupportedOperationException();
+	public ArrayList<String> GetViajes() {
+		return listaViajes;
 	}
 
 	public void AddViaje() {
@@ -44,7 +41,7 @@ public class Empreza {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
+	/*/**
 	 * 
 	 * @param rut
 	 * @param direccion
@@ -53,9 +50,15 @@ public class Empreza {
 	 * @param listaViajes
 	 * @param listaConductores
 	 */
-	public Empreza(String rut, String direccion, Arraylist<String> redesSociales, Arraylist<String> listaBuses, ArrayList<String> listaViajes, Arraylist<String> listaConductores) {
-		// TODO - implement Empreza.Empreza
-		throw new UnsupportedOperationException();
+	public Empreza(String rut, String direccion, ArrayList<String> redesSociales, ArrayList<Bus> listaBuses, ArrayList<String> listaViajes, ArrayList<String> listaConductores) {
+
+		this.rut = rut;
+		this.direccion = direccion;
+		this.redesSociales = redesSociales;
+		this.listaBuses = listaBuses;
+		//this.listaConductores = listaConductores;
+		this.listaViajes = listaViajes;
 	}
+
 
 }

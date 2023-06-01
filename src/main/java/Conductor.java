@@ -13,13 +13,15 @@ public class Conductor {
 	 * @param licencia
 	 */
 	public Conductor(String nombre, String apellido, int numeroTelefomo, String licencia) {
-		// TODO - implement Conductor.Conductor
-		throw new UnsupportedOperationException();
+
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.numeroTelefono = numeroTelefono;
+		this.licencia = licencia;
 	}
 
 	public Conductor() {
-		// TODO - implement Conductor.Conductor
-		throw new UnsupportedOperationException();
+
 	}
 
 }
